@@ -1,0 +1,42 @@
+<div class="fundo-home d-flex">
+
+  <div class="sidebar bg-light border-end d-flex flex-column" id="sidebarMenu">
+    <div class="p-3 border-bottom text-center bg-white">
+      <img src="ford.png" alt="Ford Logo" style="max-height: 40px;">
+    </div>
+    <div class="list-group list-group-flush flex-grow-1">
+      <a (click)="irParaHome()" class="list-group-item list-group-item-action active-custom py-3 px-4 fw-semibold border-0 cursor-pointer">
+        <i class="bi bi-house-door-fill me-2"></i> Home
+      </a>
+      <a (click)="irParaDashboard()" class="list-group-item list-group-item-action py-3 px-4 fw-semibold border-0 cursor-pointer">
+        <i class="bi bi-speedometer2 me-2"></i> Dashboard
+      </a>
+    </div>
+    <div class="p-3 border-top bg-white">
+      <button (click)="logout()" class="btn btn-outline-danger w-100 fw-semibold btn-sm">
+        <i class="bi bi-box-arrow-right me-1"></i> Sair
+      </button>
+    </div>
+  </div>
+
+  <div class="flex-grow-1 position-relative d-flex align-items-center justify-content-center view-container">
+    
+    <button class="btn btn-light shadow-sm position-absolute top-0 start-0 m-3 toggle-btn border" (click)="toggleSidebar()">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+
+    <div class="card card-boas-vindas text-start p-4 bg-white" style="width: 380px;">
+      <div class="card-header-custom border-bottom pb-2 mb-3">
+        <span class="text-muted small fw-bold text-uppercase">Sistema de dados FORD</span>
+      </div>
+      <div class="card-body p-0">
+        <h4 class="card-title fw-bold text-primary mb-3">Seja bem vindo(a)!</h4>
+        <p class="text-muted small">
+          Utilize o menu lateral para navegar pelas opções e acessar os dados analíticos dos veículos conectados.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,47 @@
+<div class="container-fluid p-0">
+  <div class="row g-0 altura-total w-100">
+    
+    <div class="col-md-6 d-none d-md-flex align-items-center justify-content-center metade-esquerda">
+      <img src="ranger.png" alt="Ford Ranger" class="img-fluid" style="max-height: 420px;">
+    </div>
+
+    <div class="col-md-6 d-flex align-items-center justify-content-center metade-direita">
+      <div class="col-10 col-sm-8 col-md-8 col-lg-6 mx-auto">
+        
+        <div class="text-center mb-4">
+          <img src="ford.png" alt="Ford Logo" class="mb-3" style="max-height: 60px;">
+          <h3 class="text-secondary fw-bold">Boas-vindas</h3>
+        </div>
+
+        <form (submit)="fazerLogin($event)" class="position-relative pb-4">
+          <div class="mb-3 input-group">
+            <span class="input-group-text bg-white border-end-0">
+              <i class="bi bi-person-fill text-muted"></i>
+            </span>
+            <input type="text" [(ngModel)]="usuarioInput" name="usuario" class="form-control border-start-0" placeholder="Nome de usuário" required>
+          </div>
+
+          <div class="mb-3 input-group">
+            <span class="input-group-text bg-white border-end-0">
+              <i class="bi bi-lock-fill text-muted"></i>
+            </span>
+            <input type="password" [(ngModel)]="senhaInput" name="senha" class="form-control border-start-0" placeholder="Senha" required>
+          </div>
+
+          <div class="mb-4 form-check">
+            <input type="checkbox" [(ngModel)]="lembrarMeInput" name="lembrarMe" class="form-check-input" id="rememberMe">
+            <label class="form-check-label text-muted small" for="rememberMe">Logar automaticamente</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold" style="background-color: #102542; border: none;">Entrar</button>
+          
+          <div *ngIf="mensagemErro" class="text-danger text-center small mt-2 fw-semibold animate__animated animate__fadeIn position-absolute start-0 end-0">
+            <i class="bi bi-exclamin-circle-fill me-1"></i> {{ mensagemErro }}
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</div>
