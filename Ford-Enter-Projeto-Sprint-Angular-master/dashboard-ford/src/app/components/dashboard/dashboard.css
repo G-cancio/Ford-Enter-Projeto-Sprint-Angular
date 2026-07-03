@@ -1,0 +1,58 @@
+.fundo-dashboard {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f8f9fa;
+  display: flex;
+}
+
+.view-container-dashboard {
+  flex-grow: 1;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  flex-shrink: 0;
+}
+
+.sidebar.fechada {
+  margin-left: -240px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.active-custom {
+  background-color: #e9ecef !important;
+  color: #102542 !important;
+  border-left: 4px solid #102542 !important;
+}
+
+.card-painel {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.img-carro-painel {
+  max-height: 220px;
+  width: auto;
+  object-fit: contain;
+}
+
+.toggle-btn {
+  z-index: 11;
+  border-radius: 4px;
+  padding: 4px 10px;
+}

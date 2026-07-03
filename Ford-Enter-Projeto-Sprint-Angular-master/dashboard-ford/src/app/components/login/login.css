@@ -1,0 +1,11 @@
+.metade-esquerda {
+  background-color: #ffffff;
+}
+
+.metade-direita {
+  background-color: #f8f9fa;
+}
+
+.altura-total {
+  min-height: 100vh;
+}
