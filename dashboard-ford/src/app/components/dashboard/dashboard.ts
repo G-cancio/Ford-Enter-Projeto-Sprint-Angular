@@ -29,7 +29,6 @@ export class Dashboard implements OnInit {
     this.carregarDadosDoDashboard();
   }
 
-  // Alternar a abertura do menu lateral (Idêntico ao da Home)
   toggleSidebar() {
     const sidebar = document.getElementById('sidebarMenu');
     if (sidebar) {

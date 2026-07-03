@@ -11,7 +11,6 @@ import { Router } from '@angular/router';
 export class Home {
   private router = inject(Router);
 
-  // Alternar a abertura do menu lateral
   toggleSidebar() {
     const sidebar = document.getElementById('sidebarMenu');
     if (sidebar) {

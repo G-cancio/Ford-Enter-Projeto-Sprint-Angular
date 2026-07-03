@@ -1,6 +1,5 @@
 module.exports = function(app) {
     
-    // Rota /vehicle
     app.get('/vehicle', (req, res) => {
         const connection = app.infra.connectionFactory();
         
@@ -24,7 +23,6 @@ module.exports = function(app) {
         connection.close();
     });
 
-    // Rota /vehicleData corrigida com as colunas reais da tabela!
     app.get('/vehicleData', (req, res) => {
         const connection = app.infra.connectionFactory();
         

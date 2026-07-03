@@ -5,7 +5,6 @@
   background-color: #f8f9fa;
 }
 
-/* Imagem de fundo centralizada apenas na área de visualização */
 .view-container {
   background-image: url('/ranger.png');
   background-size: contain;
@@ -15,7 +14,6 @@
   background-color: #ffffff;
 }
 
-/* Configurações da Sidebar do protótipo */
 .sidebar {
   width: 240px;
   min-height: 100vh;
@@ -23,7 +21,6 @@
   z-index: 1000;
 }
 
-/* Esconder a sidebar quando a classe 'active' for disparada */
 .sidebar.fechada {
   margin-left: -240px;
 }
@@ -32,14 +29,12 @@
   cursor: pointer;
 }
 
-/* Estilo do link selecionado */
 .active-custom {
   background-color: #e9ecef !important;
   color: #102542 !important;
   border-left: 4px solid #102542 !important;
 }
 
-/* Cartão idêntico ao quadrado cinza/branco do professor */
 .card-boas-vindas {
   border: 1px solid #ced4da;
   border-radius: 4px;

@@ -15,11 +15,10 @@ export class Login implements OnInit {
 
   usuarioInput: string = '';
   senhaInput: string = '';
-  lembrarMeInput: boolean = false; // Guarda o estado do checkbox
+  lembrarMeInput: boolean = false;
   mensagemErro: string = '';
 
   ngOnInit(): void {
-    // Verifica se a opção "Logar automaticamente" foi ativada em um login anterior
     const loginAutomatico = localStorage.getItem('usuarioLogado');
     
     if (loginAutomatico === 'true') {
@@ -35,10 +34,8 @@ export class Login implements OnInit {
       this.mensagemErro = '';
 
       if (this.lembrarMeInput) {
-        // Guarda no localStorage (permanece salvo mesmo se fechar o navegador)
         localStorage.setItem('usuarioLogado', 'true');
       } else {
-        // Guarda apenas na sessão atual (apaga se fechar a aba ou navegador)
         sessionStorage.setItem('usuarioLogado', 'true');
       }
 
